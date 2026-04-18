@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Coast Bookkeeping | Halifax, NS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        h1, h2, h3, .brand-font {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .bg-ocean {
+            background-color: #0f172a;
+        }
+        
+        .text-ocean {
+            color: #0f172a;
+        }
+
+        .bg-teal-accent {
+            background-color: #0d9488;
+        }
+        
+        .text-teal-accent {
+            color: #0d9488;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center gap-2">
+                    <i data-lucide="anchor" class="text-teal-accent w-8 h-8"></i>
+                    <span class="brand-font text-2xl font-bold text-ocean">Nova Coast Bookkeeping</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-slate-600 hover:text-teal-accent font-medium transition-colors">Home</a>
+                    <a href="#about" class="text-slate-600 hover:text-teal-accent font-medium transition-colors">About</a>
+                    <a href="#services" class="text-slate-600 hover:text-teal-accent font-medium transition-colors">Services</a>
+                    <a href="#pricing" class="text-slate-600 hover:text-teal-accent font-medium transition-colors">Pricing</a>
+                    <a href="#contact" class="bg-ocean text-white px-5 py-2 rounded-full hover:bg-slate-800 transition-colors font-medium">Get a Quote</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-600 hover:text-ocean focus:outline-none">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 pb-4 shadow-lg absolute w-full">
+            <a href="#home" class="block px-4 py-3 text-slate-600 hover:bg-slate-50 hover:text-teal-accent font-medium">Home</a>
+            <a href="#about" class="block px-4 py-3 text-slate-600 hover:bg-slate-50 hover:text-teal-accent font-medium">About</a>
+            <a href="#services" class="block px-4 py-3 text-slate-600 hover:bg-slate-50 hover:text-teal-accent font-medium">Services</a>
+            <a href="#pricing" class="block px-4 py-3 text-slate-600 hover:bg-slate-50 hover:text-teal-accent font-medium">Pricing</a>
+            <a href="#contact" class="block px-4 py-3 text-ocean font-bold bg-slate-50">Get a Quote</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-r from-slate-900/90 to-slate-900/60 z-10"></div>
+            <img src="https://images.unsplash.com/photo-1506773090264-ac0b07293a64?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="Nova Scotia Coastline" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80'">
+        </div>
+        <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+                Clear Finances. <br>
+                <span class="text-teal-400">Smooth Sailing.</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-200 mb-10 max-w-2xl mx-auto md:mx-0">
+                Professional, reliable bookkeeping services for small businesses in Halifax,NS and across Canada. We handle the numbers so you can focus on growing your business.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                <a href="#pricing" class="bg-teal-accent hover:bg-teal-600 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all shadow-lg hover:shadow-xl text-center">View Our Packages</a>
+                <a href="#contact" class="bg-white/10 backdrop-blur-sm border border-white/30 hover:bg-white/20 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all text-center">Free Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-sm font-bold text-teal-accent uppercase tracking-wider mb-2">About Us</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold text-ocean mb-6">Local Expertise. National Standards.</h3>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        Based in the Halifax, Nova Scotia, <strong>Nova Coast Bookkeeping</strong> is built on a foundation of professional accounting expertise and a passion for helping small businesses thrive.
+                    </p>
+                    <p class="text-slate-600 mb-8 leading-relaxed">
+                        With extensive experience in the accounting field, we bring a meticulous eye for detail to every ledger. Whether you are an independent freelancer, a local tradesperson, or a growing retail shop, our mission is to provide you with crystal-clear financial insights and stress-free tax preparation.
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div class="bg-teal-50 p-3 rounded-full">
+                            <i data-lucide="check-circle" class="text-teal-accent w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-ocean">100% Remote Capability</p>
+                            <p class="text-sm text-slate-500">Serving clients seamlessly across Canada</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Accounting Workspace" class="rounded-2xl shadow-2xl relative z-10" onerror="this.src='https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'">
+                    <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-teal-100 rounded-full z-0"></div>
+                    <div class="absolute -top-6 -left-6 w-24 h-24 bg-slate-100 rounded-full z-0"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-sm font-bold text-teal-accent uppercase tracking-wider mb-2">Our Services</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-ocean mb-6">Everything You Need to Keep Your Finances Afloat</h3>
+                <p class="text-slate-600">We offer comprehensive bookkeeping services tailored to Canadian businesses, ensuring you stay compliant and profitable.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-slate-100">
+                    <div class="bg-ocean/5 w-14 h-14 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="calculator" class="text-ocean w-7 h-7"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-ocean mb-3">Daily/Monthly Bookkeeping</h4>
+                    <p class="text-slate-600">Accurate recording of all financial transactions, keeping your general ledger up-to-date and organized.</p>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-slate-100">
+                    <div class="bg-teal-accent/10 w-14 h-14 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="landmark" class="text-teal-accent w-7 h-7"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-ocean mb-3">Bank Reconciliation</h4>
+                    <p class="text-slate-600">Matching your business books with your bank statements to catch discrepancies and prevent fraud.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-slate-100">
+                    <div class="bg-ocean/5 w-14 h-14 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="file-spreadsheet" class="text-ocean w-7 h-7"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-ocean mb-3">HST/GST Filing</h4>
+                    <p class="text-slate-600">Timely preparation and filing of your sales tax returns to keep you compliant with the CRA and provincial guidelines.</p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-slate-100">
+                    <div class="bg-teal-accent/10 w-14 h-14 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="users" class="text-teal-accent w-7 h-7"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-ocean mb-3">Payroll Processing</h4>
+                    <p class="text-slate-600">Ensuring your employees are paid accurately and on time, including source deductions and T4 preparation.</p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-slate-100">
+                    <div class="bg-ocean/5 w-14 h-14 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="arrow-left-right" class="text-ocean w-7 h-7"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-ocean mb-3">Accounts Payable & Receivable</h4>
+                    <p class="text-slate-600">Managing the money coming in and going out, sending invoices, and paying bills to maintain healthy cash flow.</p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-slate-100">
+                    <div class="bg-teal-accent/10 w-14 h-14 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="history" class="text-teal-accent w-7 h-7"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-ocean mb-3">Catch-Up Bookkeeping</h4>
+                    <p class="text-slate-600">Behind on your books? We provide clean-up services to get your past months or years organized and tax-ready.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-ocean relative overflow-hidden">
+        <!-- Decorative elements -->
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-10 pointer-events-none">
+            <svg class="absolute -top-24 -right-24 w-96 h-96 text-white" fill="currentColor" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50"/></svg>
+            <svg class="absolute bottom-0 left-10 w-64 h-64 text-teal-accent" fill="currentColor" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50"/></svg>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-sm font-bold text-teal-400 uppercase tracking-wider mb-2">Transparent Pricing</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-white mb-6">Flat-Rate Packages Built for You</h3>
+                <p class="text-slate-300">Predictable monthly costs. No surprise hourly bills. Choose the package that fits your business size and needs.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Package 1: Essential -->
+                <div class="bg-white rounded-2xl shadow-xl flex flex-col overflow-hidden">
+                    <div class="p-8 border-b border-slate-100 flex-grow">
+                        <h4 class="text-xl font-bold text-ocean mb-2">The Starter</h4>
+                        <p class="text-slate-500 text-sm mb-6">Perfect for freelancers and micro-businesses.</p>
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold text-ocean">From $199</span>
+                            <span class="text-slate-500">/mo</span>
+                        </div>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="text-teal-accent w-5 h-5 shrink-0 mt-0.5"></i>
+                                <span class="text-slate-600 text-sm">Unlimited transactions/mo</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="text-teal-accent w-5 h-5 shrink-0 mt-0.5"></i>
+                                <span class="text-slate-600 text-sm">Monthly bank reconciliation (1-2 accounts)</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="text-teal-accent w-5 h-5 shrink-0 mt-0.5"></i>
+                                <span class="text-slate-600 text-sm">Basic monthly Profit & Loss report</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="text-teal-accent w-5 h-5 shrink-0 mt-0.5"></i>
+                                <span class="text-slate-600 text-sm">Annual Year-End CPA-ready package</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="p-6 bg-slate-50 mt-auto">
+                        <a href="#contact" class="block w-full text-center text-ocean font-bold bg-white border-2 border-ocean hover:bg-ocean hover:text-white py-3 rounded-xl transition-colors">Select Starter</a>
+                    </div>
+                </div>
+
+                <!-- Package 2: Standard (Highlighted) -->
+                <div class="bg-white rounded-2xl shadow-2xl transform lg:-translate-y-4 flex flex-col overflow-hidden relative border-2 border-teal-accent">
+                    <div class="absolute top-0 left-0 w-full bg-teal-accent text-white text-center text-xs font-bold py-1 uppercase tracking-wider">Most Popular</div>
+                    <div class="p-8 pt-10 border-b border-slate-100 flex-grow">
+                        <h4 class="text-xl font-bold text-ocean mb-2">The Growth</h4>
+                        <p class="text-slate-500 text-sm mb-6">For growing businesses needing regular compliance.</p>
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold text-ocean">From $299</span>
+                            <span class="text-slate-500">/mo</span>
+                        </div>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="text-teal-accent w-5 h-5 shrink-0 mt-0.5"></i>
+                                <span class="text-slate-600 text-sm">Unlimited transactions/mo</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="text-teal-accent w-5 h-5 shrink-0 mt-0.5"></i>
+                                <span class="text-slate-600 text-sm">Reconciliation (Up to 4 accounts)</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="text-teal-accent w-5 h-5 shrink-0 mt-0.5"></i>
+                                <span class="text-slate-600 text-sm">HST/GST filing prep & submission</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="text-teal-accent w-5 h-5 shrink-0 mt-0.5"></i>
+                                <span class="text-slate-600 text-sm">Accounts Payable & Receivable tracking</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="text-teal-accent w-5 h-5 shrink-0 mt-0.5"></i>
+                                <span class="text-slate-600 text-sm">Priority email support</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="p-6 bg-slate-50 mt-auto">
+                        <a href="#contact" class="block w-full text-center text-white font-bold bg-teal-accent hover:bg-teal-600 py-3 rounded-xl transition-colors shadow-md">Select Growth</a>
+                    </div>
+                </div>
+
+                <!-- Package 3: Premium -->
+                <div class="bg-white rounded-2xl shadow-xl flex flex-col overflow-hidden">
+                    <div class="p-8 border-b border-slate-100 flex-grow">
+                        <h4 class="text-xl font-bold text-ocean mb-2">The Comprehensive</h4>
+                        <p class="text-slate-500 text-sm mb-6">Full-service bookkeeping for established teams.</p>
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold text-ocean">From $599</span>
+                            <span class="text-slate-500">/mo</span>
+                        </div>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="text-teal-accent w-5 h-5 shrink-0 mt-0.5"></i>
+                                <span class="text-slate-600 text-sm">Unlimited transactions</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="text-teal-accent w-5 h-5 shrink-0 mt-0.5"></i>
+                                <span class="text-slate-600 text-sm">Weekly reconciliation</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="text-teal-accent w-5 h-5 shrink-0 mt-0.5"></i>
+                                <span class="text-slate-600 text-sm">Payroll processing (up to 10 employees)</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="text-teal-accent w-5 h-5 shrink-0 mt-0.5"></i>
+                                <span class="text-slate-600 text-sm">Detailed customized financial reporting</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="text-teal-accent w-5 h-5 shrink-0 mt-0.5"></i>
+                                <span class="text-slate-600 text-sm">Monthly advisory video call</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="p-6 bg-slate-50 mt-auto">
+                        <a href="#contact" class="block w-full text-center text-ocean font-bold bg-white border-2 border-ocean hover:bg-ocean hover:text-white py-3 rounded-xl transition-colors">Select Comprehensive</a>
+                    </div>
+                </div>
+
+                <!-- Package 4: Custom -->
+                <div class="bg-slate-800 text-white rounded-2xl shadow-xl flex flex-col overflow-hidden border border-slate-700">
+                    <div class="p-8 border-b border-slate-700 flex-grow">
+                        <div class="bg-teal-accent/20 w-12 h-12 rounded-xl flex items-center justify-center mb-6">
+                            <i data-lucide="settings-2" class="text-teal-400 w-6 h-6"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">The Tailored Package</h4>
+                        <p class="text-slate-300 text-sm mb-6">Your Needs. Your Package.</p>
+                        <p class="text-slate-200 text-sm leading-relaxed mb-6">
+                            Not every business fits into a box. If you have complex inventory, multiple entities, require historical catch-up work, or need specialized advisory, we will build a custom scope of work just for you.
+                        </p>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="arrow-right" class="text-teal-400 w-5 h-5 shrink-0 mt-0.5"></i>
+                                <span class="text-slate-300 text-sm">A La Carte Services</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="arrow-right" class="text-teal-400 w-5 h-5 shrink-0 mt-0.5"></i>
+                                <span class="text-slate-300 text-sm">Complex Catch-up Projects</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="arrow-right" class="text-teal-400 w-5 h-5 shrink-0 mt-0.5"></i>
+                                <span class="text-slate-300 text-sm">Software Migration (e.g., to QBO/Xero)</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="p-6 bg-slate-900 mt-auto">
+                        <a href="#contact" class="block w-full text-center text-teal-400 font-bold bg-slate-800 border-2 border-teal-400 hover:bg-teal-400 hover:text-slate-900 py-3 rounded-xl transition-colors">Request Custom Quote</a>
+                    </div>
+                </div>
+
+            </div>
+            
+            <p class="text-center text-slate-400 text-sm mt-8">* All prices are CAD. Software subscription fees (like QuickBooks Online or Xero) may be billed separately depending on the package.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <!-- Contact Info -->
+                <div>
+                    <h2 class="text-sm font-bold text-teal-accent uppercase tracking-wider mb-2">Get In Touch</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold text-ocean mb-6">Ready to Streamline Your Finances?</h3>
+                    <p class="text-slate-600 mb-10 leading-relaxed">
+                        Whether you know exactly which package you want, or you need to discuss a customized solution, reach out today for a free consultation. Let's get your books in order.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-teal-50 p-3 rounded-lg">
+                                <i data-lucide="map-pin" class="text-teal-accent w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-ocean">Location</h4>
+                                <p class="text-slate-600">Halifax, Nova Scotia<br><span class="text-sm text-slate-500">(Providing Remote Services Across Canada)</span></p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="bg-teal-50 p-3 rounded-lg">
+                                <i data-lucide="mail" class="text-teal-accent w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-ocean">Email</h4>
+                                <p class="text-slate-600">novacoastbookkeeping@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="bg-teal-50 p-3 rounded-lg">
+                                <i data-lucide="phone" class="text-teal-accent w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-ocean">Contact no.</h4>
+                                <p class="text-slate-600">+1(782)-899-0409<br><class="text-sm text-slate-600">+1(548)-333-4822</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-slate-50 p-8 rounded-2xl shadow-sm border border-slate-100">
+                    <form id="contactForm" class="space-y-6" onsubmit="event.preventDefault(); showMessage();">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label for="firstName" class="block text-sm font-medium text-slate-700 mb-2">First Name</label>
+                                <input type="text" id="firstName" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-teal-accent focus:border-teal-accent outline-none transition-all" required>
+                            </div>
+                            <div>
+                                <label for="lastName" class="block text-sm font-medium text-slate-700 mb-2">Last Name</label>
+                                <input type="text" id="lastName" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-teal-accent focus:border-teal-accent outline-none transition-all" required>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-slate-700 mb-2">Email Address</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-teal-accent focus:border-teal-accent outline-none transition-all" required>
+                        </div>
+
+                        <div>
+                            <label for="interest" class="block text-sm font-medium text-slate-700 mb-2">I am interested in:</label>
+                            <select id="interest" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-teal-accent focus:border-teal-accent outline-none transition-all bg-white">
+                                <option>The Starter Package ($199+)</option>
+                                <option>The Growth Package ($299+)</option>
+                                <option>The Comprehensive Package ($599+)</option>
+                                <option>The Tailored / Custom Package</option>
+                                <option>Catch-up Bookkeeping / Clean-up</option>
+                                <option>General Inquiry</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-slate-700 mb-2">Tell us briefly about your business</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-teal-accent focus:border-teal-accent outline-none transition-all" placeholder="Industry, approximate monthly transactions, current software used..."></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-ocean hover:bg-slate-800 text-white font-bold py-4 rounded-xl transition-colors shadow-md flex justify-center items-center gap-2">
+                            <span>Send Message</span>
+                            <i data-lucide="send" class="w-4 h-4"></i>
+                        </button>
+
+                        <div id="success-message" class="hidden mt-4 p-4 bg-teal-50 border border-teal-200 text-teal-800 rounded-lg flex items-start gap-3">
+                            <i data-lucide="check-circle" class="w-5 h-5 shrink-0 mt-0.5"></i>
+                            <p class="text-sm">Thank you! Your message has been sent. We will get back to you within 24 hours.</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex items-center gap-2">
+                    <i data-lucide="anchor" class="text-teal-400 w-6 h-6"></i>
+                    <span class="brand-font text-xl font-bold text-white">Nova Coast Bookkeeping</span>
+                </div>
+                <div class="text-sm text-center md:text-left">
+                    &copy; 2026 Nova Coast Bookkeeping. All rights reserved.<br>
+                    Proudly based in Halifax, NS. Serving all of Canada.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Initialize Icons & Scripts -->
+    <script>
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        menu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+
+        // Form Submission Mock
+        function showMessage() {
+            const btn = document.querySelector('button[type="submit"]');
+            const msg = document.getElementById('success-message');
+            
+            btn.innerHTML = '<i data-lucide="loader-2" class="w-5 h-5 animate-spin"></i> Sending...';
+            lucide.createIcons();
+            
+            setTimeout(() => {
+                btn.classList.add('hidden');
+                msg.classList.remove('hidden');
+            }, 1000);
+        }
+    </script>
+</body>
+</html>
